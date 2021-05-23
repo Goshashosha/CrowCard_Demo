@@ -44,28 +44,50 @@
     <h1>Регистрация жителя города</h1>
     <p>Пожалуйста, заполните поля, чтобы </p>
     <hr>
-<ul>
-  <li>
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-  </li>
-  <li>
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-  </li>
-  <li>
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-  </li>
-  <li>
-    <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
-    </label>
-  </li>
-
+    <ul>
+      <li>
+        <label for="tel"><b>Телефонный номер</b></label>
+        <input type="tel" size = "30" name="tel" placeholder="Введите телефонный номер" pattern="+7 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+      <li>
+        <label for="email"><b>Электронная почта</b></label>
+        <input type="text" size = "30" placeholder="Введите электронную почту" name="email" required>
+      </li>
+      <li>
+        <label for="psw"><b>Пароль</b></label>
+        <input type="password" placeholder="Введите пароль" name="psw" required>
+      </li>
+      <li>
+        <label for="psw-repeat"><b>Повторите пароль</b></label>
+        <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+      </li>
+        <li>
+          <label for="dateofb"><b>Дата рождения</b></label>
+          <input type="date" name="dateofb">
+        </li>
+        <li>
+          <label for="placeofb"><b>Место рождения</b></label>
+          <input size = "30" placeholder="Введите Место рождения" name="placeofb">
+        </li>
+        <li>
+          <label for="place"><b>Адрес прописки</b></label>
+          <input size = "30" placeholder="Введите адрес прописки" name="place">
+        </li>
+        <li>
+          <label for="dateofb"><b>Серия и номер паспорта</b></label>
+          <input size = "30"  name="dateof">
+        </li>
+        <li>
+          <label for="conf"><b>Согласие на обработку данных</b></label>
+          <input type="file" name="conf">
+        </li>
+        <li>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+        </label>
+      </li>
     <div class="clearfix">
-      <button type="button" class="btn btn-danger">Cancel</button>
-      <button type="submit" class="btn btn-primary">Sign Up</button>
+      <button type="button" class="btn btn-danger">Отменить</button>
+      <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
     </div>
   </div>
 </form>
